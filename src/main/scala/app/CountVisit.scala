@@ -18,11 +18,12 @@ object CountVisit {
     val f1070LogParser = new F1070LogParser()
 
     val outputRdd = lines.map(item =>f1070LogParser.parseLine(item)).filter(item=>item.isValid)
-      .map(item=>item.getSourceIp)
+      .map(item=>item.toString)
+
+    //val partRdd = outputRdd.take(10);
+    //partRdd.foreach(println)
     val count = outputRdd.count()
     System.out.println("Number of ip:"+count)
-    //val first = outputRdd.take(10)
-    //first.foreach(println)
   }
 
   def help(): Unit ={

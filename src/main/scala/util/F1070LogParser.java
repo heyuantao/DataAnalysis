@@ -1,11 +1,21 @@
 package util;
 
 
+import org.apache.commons.lang.time.DateUtils;
+import org.apache.commons.net.ntp.TimeStamp;
 import org.stringtemplate.v4.ST;
 import scala.Serializable;
 import sun.management.BaseOperatingSystemImpl;
+import sun.security.jca.GetInstance;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -98,9 +108,21 @@ public class F1070LogParser implements Serializable {
         }
     }
 
+    /**
+     * 将时间解析milliseconds的形式
+     */
     private String parseTime(String content){
-        String[] splitedString = content.split(" ");
-        return splitedString[0];
+        try{
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS Z");
+            String[] splitedString = content.split(" ");
+            String timeString = splitedString[0].replace("Z", " UTC");
+            Date happenTime = format.parse(timeString);
+            //happenTime为标准时间，日志发生的时间为东八区时间，对其进行调整
+            Date happenTimeAdjust = DateUtils.addHours(happenTime,-8);
+            return Long.toString(happenTimeAdjust.getTime());
+        }catch (Exception ex){
+            return "";
+        }
     }
 
     public F1070LogParser parseLine(String content){
@@ -118,14 +140,18 @@ public class F1070LogParser implements Serializable {
      * @return
      */
     public Boolean isValid(){
-        if(this.sourceIp.equals("")){
+        if(sourceIp.equals("")||sourcePort.equals("")){
             return Boolean.FALSE;
         }
-        if(this.destinationIp.equals("")){
+        if(destinationIp.equals("")||destinationPort.equals("")){
             return Boolean.FALSE;
         }
-
-
+        if(protocol.equals("")){
+            return Boolean.FALSE;
+        }
+        if(time.equals("")){
+            return Boolean.FALSE;
+        }
         return Boolean.TRUE;
     }
 
@@ -142,6 +168,15 @@ public class F1070LogParser implements Serializable {
         System.out.println(parser.getSourceIp()+":"+parser.getSourcePort());
         System.out.println(parser.getDestinationIp()+":"+parser.getDestinationPort());
         System.out.println(parser.getProtocol());
+        System.out.println(parser.getTime());
+        //LocalDateTime time = java.time.Instant.ofEpochMilli(Long.parseLong(parser.getTime())).atZone(ZoneId.systemDefault()).toLocalDateTime();
+        //System.out.println(time);
+        /**
+         * LocalDateTime to Millisecond and reverse
+         * LocalDateTime time = java.time.Instant.ofEpochMilli(Long.parseLong(parser.getTime())).atZone(ZoneId.systemDefault()).toLocalDateTime();
+         * System.out.println(time.toInstant(ZoneOffset.ofTotalSeconds(0)).toEpochMilli());
+         **/
+
     }
 
     public String getSourceIp() {
@@ -162,5 +197,23 @@ public class F1070LogParser implements Serializable {
 
     public String getProtocol() {
         return protocol;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(getSourceIp()+" "+getSourcePort());
+        stringBuilder.append(" ");
+        stringBuilder.append(getDestinationIp()+" "+getDestinationPort());
+        stringBuilder.append(" ");
+        stringBuilder.append(getProtocol());
+        stringBuilder.append(" ");
+        stringBuilder.append(getTime());
+
+        return stringBuilder.toString();
     }
 }
