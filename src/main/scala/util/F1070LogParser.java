@@ -10,7 +10,8 @@ import java.util.regex.Pattern;
 
 /**
  * @author he_yu
- * 用于解析华三 F1070防火墙的日志，从中抽取地址，端口等信息
+ * 用于解析华三 F1070防火墙的日志，防火墙的日志主要为NAT的日志。在这个日志中可以收取源地址，目的地址和端口的一系列信息
+ * 相应的样例文件放在resources目录中
  */
 public class F1070LogParser implements Serializable {
     public static String regEx="((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)";
