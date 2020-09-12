@@ -23,10 +23,10 @@ object WebStatic {
     val preProcessedRdd = lines.map(item =>nginxLogParser.parseLine(item)).filter(item=>item.isValid)
       .map(item=>item.toString)
 
-    val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")(1)).map(item=>(item,1)).take(50)
-        //.reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false).take(50)
+    val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")(1)).map(item=>(item,1))
+        .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
 
-    targetIpRdd.foreach(println)
+    targetIpRdd.take(30).foreach(println)
 
   }
 

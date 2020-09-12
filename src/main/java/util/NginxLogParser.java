@@ -1,15 +1,11 @@
 package util;
 
 
-import org.apache.commons.lang.time.DateUtils;
 import scala.Serializable;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,8 +15,7 @@ import java.util.regex.Pattern;
  */
 public class NginxLogParser implements Serializable {
 
-    public static String visitedInformationRegEx       = "\"(GET|POST|PUT|DELETE|OPTIONS|CONNECT|PATCH|HEAD) (.*)";
-
+    public static String visitedInformationRegEx    = "\"(GET|POST|PUT|DELETE|OPTIONS|CONNECT|PATCH|HEAD) (.*)";
 
     String method = "";
     String url = "";
@@ -38,25 +33,6 @@ public class NginxLogParser implements Serializable {
         }
     }
 
-
-
-
-    /**
-     * 将时间解析milliseconds的形式
-     */
-/*    private String parseTime(String content){
-        try{
-            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS Z");
-            String[] splitedString = content.split(" ");
-            String timeString = splitedString[0].replace("Z", " UTC");
-            Date happenTime = format.parse(timeString);
-            //happenTime为标准时间，日志发生的时间为东八区时间，对其进行调整
-            Date happenTimeAdjust = DateUtils.addHours(happenTime,-8);
-            return Long.toString(happenTimeAdjust.getTime());
-        }catch (Exception ex){
-            return "";
-        }
-    }*/
 
     public NginxLogParser parseLine(String content){
         String visitedInformation = parseVisitedInformation(content);
