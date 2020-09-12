@@ -53,7 +53,7 @@
     </dependencies>
 
     <build>
-        <finalName>learnscala</finalName>
+        <finalName>DataAnalysis</finalName>
         <plugins>
             <plugin>
                 <groupId>org.scala-tools</groupId>

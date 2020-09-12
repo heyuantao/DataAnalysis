@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/examples/f1070-2020.08.head.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/util/F1070LogParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/util/F1070LogParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/app/CountVisit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/CountVisit.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$main$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/CountVisit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/F1070LogParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/F1070LogParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/learnscala.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/learnscala.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/learnscala.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/examples" />
     <property name="project.structure.last.edited" value="Project" />
@@ -117,7 +121,7 @@
       <workItem from="1599897054967" duration="116000" />
       <workItem from="1599897187930" duration="243000" />
       <workItem from="1599897437246" duration="402000" />
-      <workItem from="1599897864953" duration="1170000" />
+      <workItem from="1599897864953" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599898453829</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="readme">
+      <created>1599899057152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599899057152</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,9 +153,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work" />
     <MESSAGE value="log" />
-    <option name="LAST_COMMIT_MESSAGE" value="log" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1599899414095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="991" height="684" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1599899414095" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599898828854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -153,33 +169,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599897588091" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1599898453050">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1599899055697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599898453050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599898925410">
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599899055697" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599899433996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599898925410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599898925410">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599899433996" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599899433996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599898925410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599898925409">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599899433996" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599899433996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599898925409" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599898925410">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599899433996" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599899433996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599898925410" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599899433996" />
     <state x="440" y="95" key="SettingsEditor" timestamp="1599897571417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599897571417" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599898455192">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599899058695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599898455192" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599899058695" />
   </component>
 </project>

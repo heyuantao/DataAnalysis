@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="66ae5bb6-b417-42ce-82f3-776c4eabaa1d" name="node01.syslab.org" url="http://node01.syslab.org">
+        <fileTransfer host="node01.syslab.org" port="22" rootFolder="/tmp/tm" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

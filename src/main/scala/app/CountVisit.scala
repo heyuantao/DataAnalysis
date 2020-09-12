@@ -19,12 +19,15 @@ object CountVisit {
 
     val outputRdd = lines.map(item =>f1070LogParser.parseLine(item)).filter(item=>item.isValid)
       .map(item=>item.getSourceIp)
-
-    val first = outputRdd.take(10)
-    first.foreach(println)
+    val count = outputRdd.count()
+    System.out.println("Number of ip:"+count)
+    //val first = outputRdd.take(10)
+    //first.foreach(println)
   }
+
   def help(): Unit ={
     println("Use path as flowing!")
     println("file:///e:/info.txt  or  /tmp/netdevlog/f1070-2020.09")
   }
+
 }
