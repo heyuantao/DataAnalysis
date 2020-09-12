@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/app/FirewallStatic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/app/WebStatic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/util/NginxLogParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/CountVisit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/CountVisit.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/util/F1070LogParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/util/F1070LogParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/F1070LogParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/F1070LogParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/app/CountVisit.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/CountVisit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/F1070LogParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +68,21 @@
     <property name="settings.editor.selected.configurable" value="ScalaSmartKeys" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\DataAnalysis\src\main\resources\examples" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app" />
+      <recent name="util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\DataAnalysis" />
       <recent name="D:\projects\DataAnalysis\src\data" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\DataAnalysis\src\main\resources\examples" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.CountVisit">
+  <component name="RunManager" selected="Application.WebStatic">
     <configuration name="CountVisit" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="app.CountVisit" />
+      <option name="MAIN_CLASS_NAME" value="app.FirewallStatic" />
       <module name="DataAnalysis" />
       <option name="PROGRAM_PARAMETERS" value="./data/examples/f1070-2020.08.head.txt" />
       <option name="VM_PARAMETERS" value="-Dspark.master=local" />
@@ -97,8 +109,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NginxLogParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.NginxLogParser" />
+      <module name="DataAnalysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebStatic" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="app.WebStatic" />
+      <module name="DataAnalysis" />
+      <option name="PROGRAM_PARAMETERS" value="./data/examples/nginx-2020.08.head.txt" />
+      <option name="VM_PARAMETERS" value="-Dspark.master=local" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CountVisit" />
+      <item itemvalue="Application.F1070LogParser" />
+      <item itemvalue="Application.NginxLogParser" />
+      <item itemvalue="Application.WebStatic" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebStatic" />
+        <item itemvalue="Application.NginxLogParser" />
         <item itemvalue="Application.CountVisit" />
         <item itemvalue="Application.F1070LogParser" />
       </list>
@@ -130,7 +178,7 @@
       <workItem from="1599897187930" duration="243000" />
       <workItem from="1599897437246" duration="402000" />
       <workItem from="1599897864953" duration="1949000" />
-      <workItem from="1599913638053" duration="5860000" />
+      <workItem from="1599913638053" duration="12356000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -167,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599915668693</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change">
+      <created>1599919580326</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599919580326</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,68 +233,73 @@
     <MESSAGE value="readme" />
     <MESSAGE value="work" />
     <MESSAGE value="continue" />
-    <option name="LAST_COMMIT_MESSAGE" value="continue" />
+    <MESSAGE value="change" />
+    <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1599899414095">
+    <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1599919694309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" width="991" height="684" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1599899414095" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599898828854">
+    <state x="552" y="179" width="991" height="684" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1599919694309" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599924119473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599898828854" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599924119473" />
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1599897588091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599897588091" />
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1599916329985">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1599923736769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599916329985" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1599915666990">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599923736769" />
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1599919579036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599915666990" />
-    <state width="1877" height="342" key="GridCell.Tab.0.bottom" timestamp="1599919564817">
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599919579036" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599919642522">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599919564817" />
-    <state width="1877" height="342" key="GridCell.Tab.0.center" timestamp="1599919564817">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599919642522" />
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom" timestamp="1599926063744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599919564817" />
-    <state width="1877" height="342" key="GridCell.Tab.0.left" timestamp="1599919564817">
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599926063744" />
+    <state width="1877" height="342" key="GridCell.Tab.0.center" timestamp="1599926063744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599919564817" />
-    <state width="1877" height="342" key="GridCell.Tab.0.right" timestamp="1599919564817">
+    <state width="1877" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599926063744" />
+    <state width="1877" height="342" key="GridCell.Tab.0.left" timestamp="1599926063743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599919564817" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599915943092">
+    <state width="1877" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599926063743" />
+    <state width="1877" height="342" key="GridCell.Tab.0.right" timestamp="1599926063744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599915943092" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599915943092">
+    <state width="1877" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599926063744" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599922949314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599915943092" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599915943092">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599922949314" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599922949314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599915943092" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599915943092">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599922949314" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599922949314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599915943092" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599922949314" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599922949314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599922949314" />
     <state x="440" y="95" key="SettingsEditor" timestamp="1599917720489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599917720489" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599915670459">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599919581636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599915670459" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599919581636" />
   </component>
 </project>
