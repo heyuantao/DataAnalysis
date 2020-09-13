@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/scala/app/WebStaticTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/app/WebStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/WebStatic.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,7 @@
       <list>
         <option value="Class" />
         <option value="Package Object" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
@@ -52,6 +54,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/util" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -59,22 +63,28 @@
     <property name="settings.editor.selected.configurable" value="ScalaSmartKeys" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projects\DataAnalysis" />
-      <recent name="D:\projects\DataAnalysis\src\data" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="app" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\DataAnalysis\src\main\resources\examples" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="app" />
       <recent name="util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\DataAnalysis\src\main\resources\examples" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\DataAnalysis" />
+      <recent name="D:\projects\DataAnalysis\src\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChangeF1070LogFormat">
+  <component name="RunManager" selected="Application.WebStatic">
     <configuration name="ChangeF1070LogFormat" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="app.ChangeF1070LogFormat" />
       <module name="DataAnalysis" />
@@ -90,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountVisit" type="Application" factoryName="Application">
+    <configuration name="FirewallStatic" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="app.FirewallStatic" />
       <module name="DataAnalysis" />
       <option name="PROGRAM_PARAMETERS" value="./data/examples/f1070-2020.08.head.txt" />
@@ -137,7 +147,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.LineCount" />
-      <item itemvalue="Application.CountVisit" />
+      <item itemvalue="Application.FirewallStatic" />
       <item itemvalue="Application.ChangeF1070LogFormat" />
       <item itemvalue="Application.WebStatic" />
     </list>
@@ -176,7 +186,7 @@
       <workItem from="1599913638053" duration="13153000" />
       <workItem from="1599926936789" duration="3326000" />
       <workItem from="1599958814318" duration="2229000" />
-      <workItem from="1599985592389" duration="7324000" />
+      <workItem from="1599985592389" duration="11442000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -255,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600001880380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="use jdbc in debug">
+      <created>1600003563703</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600003563703</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,21 +287,22 @@
     <MESSAGE value="sloved" />
     <MESSAGE value="everything work" />
     <MESSAGE value="have a rest" />
-    <option name="LAST_COMMIT_MESSAGE" value="have a rest" />
+    <MESSAGE value="use jdbc in debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="use jdbc in debug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1599919694309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" width="991" height="684" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1599919694309" />
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1599986233638">
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600005031821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599986233638" />
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600002817407">
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600005031821" />
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600004599144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600002817407" />
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600004599144" />
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1599897588091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,30 +319,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1599929530447" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1600001879407">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1600003562583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600001879407" />
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600003562583" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599927383340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599927383340" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1600003520479">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1600007909336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600003520479" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1600003520479">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
+    <state width="1877" height="241" key="GridCell.Tab.0.center" timestamp="1600007909336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600003520479" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1600003520479">
+    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
+    <state width="1877" height="241" key="GridCell.Tab.0.left" timestamp="1600007909336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600003520479" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1600003520479">
+    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right" timestamp="1600007909336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600003520479" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599926894618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,9 +363,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599927473526" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600001881759">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600003569442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600001881759" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600003569442" />
+    <state x="731" y="223" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1600007260908">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="223" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/0.0.1920.1040@0.0.1920.1040" timestamp="1600007260908" />
   </component>
 </project>

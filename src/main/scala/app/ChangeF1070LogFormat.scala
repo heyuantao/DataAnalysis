@@ -42,7 +42,7 @@ object ChangeF1070LogFormat {
     prop.put("user","root")
     prop.put("driver","com.mysql.jdbc.Driver")
 
-    preProcessedDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.visit",prop)
+    preProcessedDf.write.mode("overwrite").jdbc("jdbc:mysql://172.16.5.42/work","work.visit",prop)
 
   }
 
