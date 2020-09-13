@@ -1,5 +1,7 @@
 package app
 
+import java.util.Properties
+
 import app.FirewallStatic.help
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
@@ -28,13 +30,19 @@ object ChangeF1070LogFormat {
 
     //preProcessedRdd.saveAsTextFile(args(1))
     val preProcessedDf = spark.createDataFrame(preProcessedRdd)
-    //preProcessedDf.take(10).foreach(println)
-    //preProcessedDf.printSchema()
+    preProcessedDf.take(10).foreach(println)
+    preProcessedDf.printSchema()
 
-    preProcessedDf.createTempView("visited")
-    val result = spark.sql("select count(*) from visited")
-    println("Line count:")
-    result.show()
+    //preProcessedDf.createTempView("visited")
+    //val result = spark.sql("select count(*) from visited")
+    //println("Line count:")
+    //result.show()
+
+    val prop = new Properties();
+    prop.put("user","root")
+    prop.put("driver","com.mysql.jdbc.Driver")
+
+    preProcessedDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.visit",prop)
 
   }
 
@@ -45,4 +53,4 @@ object ChangeF1070LogFormat {
 
 }
 
-case class Visit(sourceIp:String, sourcePort:Int, destIp:String, destPort:Int, protocol:String, time:String)
+case class Visit(sourceip:String, sourceport:Int, destip:String, destport:Int, protocol:String, time:String)
