@@ -42,7 +42,7 @@ object WebStatic {
      */
     val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")(1)).map(item=>(item,1))
         .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
-        .take(200) //取前200个
+        .take(500) //取前200个
         .map(item =>WebVisitFrequent(item._2,item._1.toInt))
 
     //将数据转变为DataFrame的形式

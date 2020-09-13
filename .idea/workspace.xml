@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/scala/app/WebStaticTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/app/WebStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/WebStatic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +183,7 @@
       <workItem from="1599913638053" duration="13153000" />
       <workItem from="1599926936789" duration="3326000" />
       <workItem from="1599958814318" duration="2229000" />
-      <workItem from="1599985592389" duration="11442000" />
+      <workItem from="1599985592389" duration="11627000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -272,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600003563703</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="use jdbc in debug">
+      <created>1600007931480</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600007931480</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,30 +323,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1599929530447" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1600003562583">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1600007930305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600003562583" />
+    <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600007930305" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599927383340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599927383340" />
-    <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1600007909336">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1600008050840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
-    <state width="1877" height="241" key="GridCell.Tab.0.center" timestamp="1600007909336">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.center" timestamp="1600008050840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
-    <state width="1877" height="241" key="GridCell.Tab.0.left" timestamp="1600007909336">
+    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.left" timestamp="1600008050840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
-    <state width="1877" height="241" key="GridCell.Tab.0.right" timestamp="1600007909336">
+    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right" timestamp="1600008050840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600007909336" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599926894618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -363,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599927473526" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600003569442">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600007936489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600003569442" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600007936489" />
     <state x="731" y="223" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1600007260908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
