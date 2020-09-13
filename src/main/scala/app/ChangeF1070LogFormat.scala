@@ -10,7 +10,7 @@ object ChangeF1070LogFormat {
 
     Logger.getLogger("org").setLevel(Level.INFO)
 
-    if (args.length != 2) {
+    if (args.length != 1) {
       help()
       return
     }
@@ -24,11 +24,17 @@ object ChangeF1070LogFormat {
     val preProcessedRdd = lines.map(item =>f1070LogParser.parseLine(item)).filter(item=>item.isValid)
       .map(item=>item.toString)
       .map(_.split(" "))
-      .map(item=>Visit(item(0),item(1),item(2),item(3),item(4),item(5)))
+      .map(item=>Visit(item(0),item(1).toInt,item(2),item(3).toInt,item(4),item(5)))
 
     //preProcessedRdd.saveAsTextFile(args(1))
-    print(preProcessedRdd.getClass)
-    preProcessedRdd.take(50).foreach(println)
+    val preProcessedDf = spark.createDataFrame(preProcessedRdd)
+    //preProcessedDf.take(10).foreach(println)
+    //preProcessedDf.printSchema()
+
+    preProcessedDf.createTempView("visited")
+    val result = spark.sql("select count(*) from visited")
+    println("Line count:")
+    result.show()
 
   }
 
@@ -39,4 +45,4 @@ object ChangeF1070LogFormat {
 
 }
 
-case class Visit(sourceIp:String, sourcePort:String, destIp:String, destPort:String, protocol:String, time:String)
+case class Visit(sourceIp:String, sourcePort:Int, destIp:String, destPort:Int, protocol:String, time:String)
