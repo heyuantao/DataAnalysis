@@ -149,7 +149,7 @@ public class F1070LogParser implements Serializable {
      * 功能测试代码，测试程序输出结果是否正确
      * @param args
      */
-/*    public static void main(String args[]){
+    public static void main(String args[]){
         String rawContent = "2020-08-31T12:07:36.000Z 172.16.103.12 F1070-B %%10FILTER/6/FILTER_ZONE_IPV4_EXECUTION: SrcZoneName(1025)=Trust;DstZoneName(1035)=Untrust;Type(1067)=ACL;SecurityPolicy(1072)=Trust-UnTrust;RuleID(1078)=2;Protocol(1001)=UDP;Application(1002)=dns;SrcIPAddr(1003)=172.17.6.24;SrcPort(1004)=40012;DstIPAddr(1007)=114.114.114.114;DstPort(1008)=53;MatchCount(1069)=1;Event(1048)=Permit;";
 
         F1070LogParser parser = new F1070LogParser();
@@ -160,13 +160,13 @@ public class F1070LogParser implements Serializable {
         System.out.println(parser.getTime());
         //LocalDateTime time = java.time.Instant.ofEpochMilli(Long.parseLong(parser.getTime())).atZone(ZoneId.systemDefault()).toLocalDateTime();
         //System.out.println(time);
-        *//**
+        /**
          * LocalDateTime to Millisecond and reverse
          * LocalDateTime time = java.time.Instant.ofEpochMilli(Long.parseLong(parser.getTime())).atZone(ZoneId.systemDefault()).toLocalDateTime();
          * System.out.println(time.toInstant(ZoneOffset.ofTotalSeconds(0)).toEpochMilli());
-         **//*
+         **/
 
-    }*/
+    }
 
     public String getSourceIp() {
         return sourceIp;

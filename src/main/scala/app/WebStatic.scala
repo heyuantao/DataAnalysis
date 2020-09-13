@@ -26,7 +26,7 @@ object WebStatic {
     val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")(1)).map(item=>(item,1))
         .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
 
-    targetIpRdd.take(30).foreach(println)
+    targetIpRdd.take(100).foreach(println)
 
   }
 
