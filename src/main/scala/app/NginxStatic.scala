@@ -29,7 +29,7 @@ object WebStatic {
     clearTableInDatabase()
 
     val inputFilePath = args(0)
-    val spark = SparkSession.builder.appName("WebVisited").getOrCreate()
+    val spark = SparkSession.builder.appName("NginxStatic").getOrCreate()
     val lines = spark.read.textFile(inputFilePath).rdd
 
     val nginxLogParser = new NginxLogParser()

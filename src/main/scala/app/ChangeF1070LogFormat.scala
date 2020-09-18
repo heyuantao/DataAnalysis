@@ -2,7 +2,7 @@ package app
 
 import java.util.Properties
 
-import app.FirewallStatic.help
+import app.F1070FirewallStatic.help
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import util.F1070LogParser
