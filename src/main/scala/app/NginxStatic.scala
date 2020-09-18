@@ -3,6 +3,7 @@ package app
 import java.sql.{Connection, DriverManager}
 import java.util.Properties
 
+import dao.WebVisitFrequent
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import util.NginxLogParser
@@ -16,8 +17,7 @@ import util.NginxLogParser
  * spark-submit --class app.WebStatic --packages "mysql:mysql-connector-java:5.1.46"   --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/nginx*
  */
 
-
-object WebStatic {
+object NginxStatic {
   def main(args: Array[String]) {
 
     Logger.getLogger("org").setLevel(Level.INFO)
@@ -41,9 +41,9 @@ object WebStatic {
      * 根据访问量对url进行排序，并最终转换为case class的形式
      */
     val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")(1)).map(item=>(item,1))
-        .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
-        .take(500) //取前200个
-        .map(item =>WebVisitFrequent(item._2,item._1.toInt))
+      .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
+      .take(500) //取前200个
+      .map(item =>WebVisitFrequent(item._2,item._1.toInt))
 
     //将数据转变为DataFrame的形式
     val targetIpDf = spark.createDataFrame(targetIpRdd)
@@ -77,10 +77,10 @@ object WebStatic {
     val rs = statement.execute("DELETE FROM webvisitfrequent")
   }
 
-}
+/*  /**
+   * 用来描述访问量，url是访问对应的链接，count表示访问的次数
+   */
+  case class WebVisitFrequent(url:String,count:Int)*/
 
-/**
- * 用来描述访问量，url是访问对应的链接，count表示访问的次数
- */
-case class WebVisitFrequent(url:String,count:Int)
+}
 

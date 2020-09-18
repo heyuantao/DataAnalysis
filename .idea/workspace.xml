@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dao/FirewallVisitFrequent.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dao/WebVisitFrequent.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/FirewallStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/F1070FirewallStatic.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/app/NginxStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/NginxStatic.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebStatic" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="app.WebStatic" />
+    <configuration name="NginxStatic" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="app.NginxStatic" />
       <module name="DataAnalysis" />
       <option name="PROGRAM_PARAMETERS" value="./data/examples/nginx-2020.08.head.txt" />
       <option name="VM_PARAMETERS" value="-Dspark.master=local" />
@@ -148,11 +149,11 @@
       <item itemvalue="Application.LineCount" />
       <item itemvalue="Application.F1070FirewallStatic" />
       <item itemvalue="Application.ChangeF1070LogFormat" />
-      <item itemvalue="Application.WebStatic" />
+      <item itemvalue="Application.NginxStatic" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WebStatic" />
+        <item itemvalue="Application.NginxStatic" />
       </list>
     </recent_temporary>
   </component>
@@ -315,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600005031821" />
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600418490474">
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600428095884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600004599144" />
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600428095884" />
     <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418490474" />
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1600055089189">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -346,25 +347,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599927383340" />
-    <state width="1877" height="263" key="GridCell.Tab.0.bottom" timestamp="1600418813286">
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom" timestamp="1600428377265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600428377265" />
     <state width="1877" height="263" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418813286" />
-    <state width="1877" height="263" key="GridCell.Tab.0.center" timestamp="1600418813286">
+    <state width="1877" height="241" key="GridCell.Tab.0.center" timestamp="1600428377265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600428377265" />
     <state width="1877" height="263" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418813286" />
-    <state width="1877" height="263" key="GridCell.Tab.0.left" timestamp="1600418813286">
+    <state width="1877" height="241" key="GridCell.Tab.0.left" timestamp="1600428377265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600428377265" />
     <state width="1877" height="263" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418813286" />
-    <state width="1877" height="263" key="GridCell.Tab.0.right" timestamp="1600418813286">
+    <state width="1877" height="241" key="GridCell.Tab.0.right" timestamp="1600428377265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600008050840" />
+    <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600428377265" />
     <state width="1877" height="263" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418813286" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599926894618">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -391,9 +392,10 @@
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600007936489" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600067666920" />
-    <state x="658" y="322" key="git4idea.merge.GitPullDialog" timestamp="1600418151964">
+    <state x="658" y="322" key="git4idea.merge.GitPullDialog" timestamp="1600427787627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="658" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600427787627" />
     <state x="658" y="322" key="git4idea.merge.GitPullDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600418151964" />
     <state x="731" y="223" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1600007260908">
       <screen x="0" y="0" width="1920" height="1040" />

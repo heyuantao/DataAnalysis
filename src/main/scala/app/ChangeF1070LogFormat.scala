@@ -51,6 +51,7 @@ object ChangeF1070LogFormat {
     println("file:///e:/info.txt  or  /tmp/netdevlog/f1070-2020.09")
   }
 
+  case class Visit(sourceip:String, sourceport:Int, destip:String, destport:Int, protocol:String, time:String)
+
 }
 
-case class Visit(sourceip:String, sourceport:Int, destip:String, destport:Int, protocol:String, time:String)
