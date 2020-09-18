@@ -18,7 +18,7 @@ import util.F1070LogParser
  );
  *
  # 2.执行提交命令，该命令会下载程序所依赖的数据库驱动文件
- spark-submit --class app.F1070FirewallStatic --packages "mysql:mysql-connector-java:5.1.46"   --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/f1070*
+ spark-submit --class app.F1070FirewallStatic --packages "mysql:mysql-connector-java:5.1.46" --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/f1070*
  */
 
 object F1070FirewallStatic {
@@ -40,13 +40,22 @@ object F1070FirewallStatic {
     val preProcessedRdd = lines.map(item =>f1070LogParser.parseLine(item)).filter(item=>item.isValid)
       .map(item=>item.toString)
 
-    val targetIpRdd = preProcessedRdd.map(item=>item.split(" ")).map(item=>(item(0)+":"+item(1),1))
+    //preProcessedRdd.take(20).foreach(println)
+    //return
+
+    val sourceIpRdd = preProcessedRdd.map(item=>item.split(" ")).map(item=>(item(0)+":"+item(1),1))
         .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
         .take(num=500)
         .map(item =>FirewallVisitFrequent(item._2,item._1.toInt))
 
+    val destinationIpRdd = preProcessedRdd.map(item=>item.split(" ")).map(item=>(item(2)+":"+item(3),1))
+      .reduceByKey((a,b)=>a+b).map(item=>(item._2,item._1)).sortByKey(ascending = false)
+      .take(num=500)
+      .map(item =>FirewallVisitFrequent(item._2,item._1.toInt))
+
     //将数据转变为DataFrame的形式
-    val targetIpDf = spark.createDataFrame(targetIpRdd)
+    val sourceIpDf = spark.createDataFrame(sourceIpRdd)
+    val destinationIPDf = spark.createDataFrame(destinationIpRdd)
 
     //targetIpRdd.foreach(println)
 
@@ -56,7 +65,8 @@ object F1070FirewallStatic {
     val prop = new Properties();
     prop.put("user","root")
     prop.put("driver","com.mysql.jdbc.Driver")
-    targetIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.f1070firewallstatic",prop)
+    sourceIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.f1070firewallstatic",prop)
+    destinationIPDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.f1070firewallstatic",prop)
   }
 
   def help(): Unit ={
