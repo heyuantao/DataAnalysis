@@ -17,8 +17,8 @@ import util.F1070LogParser
      count int(20)
  );
  *
- * # 2.执行提交命令，该命令会下载程序所依赖的数据库驱动文件
- * spark-submit --class app.F1070FirewallStatic --packages "mysql:mysql-connector-java:5.1.46"   --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/nginx*
+ # 2.执行提交命令，该命令会下载程序所依赖的数据库驱动文件
+ spark-submit --class app.F1070FirewallStatic --packages "mysql:mysql-connector-java:5.1.46"   --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/f1070*
  */
 
 object F1070FirewallStatic {
