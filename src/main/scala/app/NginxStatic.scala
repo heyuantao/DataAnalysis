@@ -11,10 +11,10 @@ import util.NginxLogParser
 /**
  * #程序运行说明，首先创建数据库和数据表，然后用spark-submit提交任务
  * # 1.创建数据表
- * create table webvisitfrequent (id int(20) primary key auto_increment, url varchar(500), count int(20));
+ * create table nginxstatic (id int(20) primary key auto_increment, url varchar(500), count int(20));
  *
- * # 2.执行提交命令，该命令会下载程序所依赖的数据库驱动文件
- * spark-submit --class app.WebStatic --packages "mysql:mysql-connector-java:5.1.46"   --master yarn --deploy-mode client DataAnalysis.jar  /tmp/netdevlog/nginx*
+ # 2.执行提交命令，该命令会下载程序所依赖的数据库驱动文件
+ spark-submit --class app.NginxStatic --packages "mysql:mysql-connector-java:5.1.46"  --master yarn --deploy-mode cluster DataAnalysis.jar  /tmp/netdevlog/nginx*
  */
 
 object NginxStatic {
@@ -54,7 +54,7 @@ object NginxStatic {
     val prop = new Properties();
     prop.put("user","root")
     prop.put("driver","com.mysql.jdbc.Driver")
-    targetIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.webvisitfrequent",prop)
+    targetIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.nginxstatic",prop)
 
   }
 
@@ -74,13 +74,7 @@ object NginxStatic {
     val connection = DriverManager.getConnection(url, username, "")
     val statement = connection.createStatement
     //删除所有内容
-    val rs = statement.execute("DELETE FROM webvisitfrequent")
+    val rs = statement.execute("DELETE FROM nginxstatic")
   }
-
-/*  /**
-   * 用来描述访问量，url是访问对应的链接，count表示访问的次数
-   */
-  case class WebVisitFrequent(url:String,count:Int)*/
-
 }
 
