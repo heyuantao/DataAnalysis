@@ -4,8 +4,6 @@
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/F1070FirewallStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/F1070FirewallStatic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/NginxStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/NginxStatic.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,11 +112,11 @@
       <recent name="D:\projects\DataAnalysis\src\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.F1070FirewallStatic">
+  <component name="RunManager" selected="Application.ChangeF1070LogFormat">
     <configuration name="ChangeF1070LogFormat" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="app.ChangeF1070LogFormat" />
       <module name="DataAnalysis" />
-      <option name="PROGRAM_PARAMETERS" value="./data/examples/f1070-2020.08.head.txt" />
+      <option name="PROGRAM_PARAMETERS" value="./data/examples/f1070-2020.08.head.txt ./data/examples/f1070-2020.08.output.txt" />
       <option name="VM_PARAMETERS" value="-Dspark.master=local" />
       <extension name="coverage">
         <pattern>
@@ -192,22 +190,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Research" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Research" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@253de376" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Research" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@20da2b06" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -239,7 +222,7 @@
       <workItem from="1600913545738" duration="1143000" />
       <workItem from="1600915384485" duration="1359000" />
       <workItem from="1600999974724" duration="1178000" />
-      <workItem from="1601017004672" duration="1355000" />
+      <workItem from="1601017004672" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -381,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600438682174</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add stop">
+      <created>1601019590881</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601019590881</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +388,8 @@
     <MESSAGE value="log" />
     <MESSAGE value="ip visit work" />
     <MESSAGE value="have a rest" />
-    <option name="LAST_COMMIT_MESSAGE" value="have a rest" />
+    <MESSAGE value="add stop" />
+    <option name="LAST_COMMIT_MESSAGE" value="add stop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1600055030967">
@@ -410,11 +401,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600429892419" />
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600830969198">
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601020426465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600437251552" />
-    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600830969198" />
+    <state x="609" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020426465" />
+    <state x="694" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601020520899">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="329" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020520899" />
     <state x="703" y="435" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1600055089189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -432,35 +427,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1599929530447" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1600438681561">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1601019589436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600438681561" />
-    <state x="560" y="110" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600067663738" />
+    <state x="560" y="110" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601019589436" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599927383340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599927383340" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1601017010798">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom" timestamp="1601020500163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600438777008" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601017010798" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1601017010798">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020500163" />
+    <state width="1877" height="263" key="GridCell.Tab.0.center" timestamp="1601020500163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600438777008" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601017010798" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1601017010797">
+    <state width="1877" height="263" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020500163" />
+    <state width="1877" height="263" key="GridCell.Tab.0.left" timestamp="1601020500163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600438777008" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601017010797" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1601017010798">
+    <state width="1877" height="263" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020500163" />
+    <state width="1877" height="263" key="GridCell.Tab.0.right" timestamp="1601020500163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600438777008" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601017010798" />
+    <state width="1877" height="263" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020500163" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599926894618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -486,11 +481,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599927473526" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600438683539">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601019595938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600438683539" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600067666920" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601019595938" />
     <state x="780" y="392" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600438083020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

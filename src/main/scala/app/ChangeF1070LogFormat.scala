@@ -12,13 +12,13 @@ object ChangeF1070LogFormat {
 
     Logger.getLogger("org").setLevel(Level.INFO)
 
-    if (args.length != 1) {
+    if (args.length != 2) {
       help()
       return
     }
 
     val inputFilePath = args(0)
-    val spark = SparkSession.builder.appName("changeformat").getOrCreate()
+    val spark = SparkSession.builder.appName("ChangeF1070LogFormat").getOrCreate()
     val lines = spark.read.textFile(inputFilePath).rdd
 
     val f1070LogParser = new F1070LogParser()
@@ -33,17 +33,8 @@ object ChangeF1070LogFormat {
     preProcessedDf.take(10).foreach(println)
     preProcessedDf.printSchema()
 
-    //preProcessedDf.createTempView("visited")
-    //val result = spark.sql("select count(*) from visited")
-    //println("Line count:")
-    //result.show()
-
-    val prop = new Properties();
-    prop.put("user","root")
-    prop.put("driver","com.mysql.jdbc.Driver")
-
-    preProcessedDf.write.mode("overwrite").jdbc("jdbc:mysql://172.16.5.42/work","work.visit",prop)
-
+    //转变后将文件进行保存,格式可以为json或者parquet
+    preProcessedDf.write.format("json").save(args(1))
 
     //关闭spark
     spark.stop()
@@ -51,7 +42,7 @@ object ChangeF1070LogFormat {
 
   def help(): Unit ={
     println("Must have input and output path !")
-    println("file:///e:/info.txt  or  /tmp/netdevlog/f1070-2020.09")
+    println("Path format must be in file:///e:/info.txt  or  /tmp/netdevlog/f1070-2020.09 format !")
   }
 
   case class Visit(sourceip:String, sourceport:Int, destip:String, destport:Int, protocol:String, time:String)
