@@ -67,6 +67,10 @@ object F1070FirewallStatic {
     prop.put("driver","com.mysql.jdbc.Driver")
     sourceIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.f1070firewallstatic",prop)
     destinationIPDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.f1070firewallstatic",prop)
+
+
+    //关闭spark
+    spark.stop()
   }
 
   def help(): Unit ={

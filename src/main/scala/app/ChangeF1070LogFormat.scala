@@ -44,6 +44,9 @@ object ChangeF1070LogFormat {
 
     preProcessedDf.write.mode("overwrite").jdbc("jdbc:mysql://172.16.5.42/work","work.visit",prop)
 
+
+    //关闭spark
+    spark.stop()
   }
 
   def help(): Unit ={

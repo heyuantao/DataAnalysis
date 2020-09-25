@@ -56,6 +56,9 @@ object NginxStatic {
     prop.put("driver","com.mysql.jdbc.Driver")
     targetIpDf.write.mode("append").jdbc("jdbc:mysql://172.16.5.42/work","work.nginxstatic",prop)
 
+
+    //关闭spark
+    spark.stop()
   }
 
   def help(): Unit ={
