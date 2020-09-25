@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d591ebcc-bae8-417a-ae56-e0759f85530e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/app/ChangeF1070LogFormat.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,7 @@
       <workItem from="1600913545738" duration="1143000" />
       <workItem from="1600915384485" duration="1359000" />
       <workItem from="1600999974724" duration="1178000" />
-      <workItem from="1601017004672" duration="2374000" />
+      <workItem from="1601017004672" duration="3106000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1599898335539</created>
@@ -371,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601019590881</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="continue">
+      <created>1601020617290</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601020617290</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,12 +390,12 @@
     <MESSAGE value="everything work" />
     <MESSAGE value="use jdbc in debug" />
     <MESSAGE value="change" />
-    <MESSAGE value="continue" />
     <MESSAGE value="log" />
     <MESSAGE value="ip visit work" />
     <MESSAGE value="have a rest" />
     <MESSAGE value="add stop" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stop" />
+    <MESSAGE value="continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" width="991" height="684" key="#Deployment" timestamp="1600055030967">
@@ -427,11 +433,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1599929530447" />
-    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1601019589436">
+    <state x="560" y="110" key="CommitChangelistDialog2" timestamp="1601020616394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="560" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600438681561" />
-    <state x="560" y="110" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601019589436" />
+    <state x="560" y="110" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020616394" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599927383340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -481,11 +487,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599927473526" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601019595938">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601020618453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600438683539" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601019595938" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601020618453" />
     <state x="780" y="392" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600438083020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
